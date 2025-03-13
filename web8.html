@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Akame ga Kill</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://mycommons.life/wp-content/uploads/2021/03/wp3149697.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .text-block {
+            padding: 10px;
+            position: fixed;
+            background-color:aliceblue;
+            bottom: 50px;
+            align-content: center;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .text-block b {
+            color: #ff4444;
+        }
+        .table-container {
+            z-index: 100;
+            position:fixed;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #3a3a3a;
+        }
+        .episode-button {
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 5px; 
+        transition: 0.3s; 
+    }
+    .episode-button:hover {
+        background-color: #666;
+    }
+    .video-container {
+    z-index: 100;
+    margin-top: 250px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    }
+    iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+        
+    </style>
+     <script>
+      function playEpisode(url) {
+          document.getElementById("anime-player").src = url;
+      }
+  </script>
+  </head>
+  <body>
+  <div class="table-container">
+   <table>
+    <tr>
+      <th style="color: beige;" colspan="3">Episodes</th>
+    </tr>
+    <tr>
+        <td style="color: beige;" colspan="3">1 Season</td>
+    </tr>
+    <tr>
+        <td style="color: aliceblue;" button class="episode-button" onclick="playEpisode('https://kodik.info/seria/208732/8046189e64db0601873dfdb59ddfe975/720p')">Episode 1</td>
+        <td style="color: aliceblue;" button class="episode-button" onclick="playEpisode('https://kodik.info/seria/208733/eec2b50f5b9a7cadbb7a117fafdf655d/720p')">Episode 2</td>
+        <td style="color: aliceblue;" button class="episode-button" onclick="playEpisode('https://kodik.info/seria/208734/21c9213fffd411b53657a112669e7646/720p')">Episode 3</td>
+    </tr>
+   </table>
+  </div>
+  <div class="video-container">
+    <iframe id="anime-player" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+   <div class="text-block">
+    <p><b>Нічний Рейд</b> - група відступників, які виконують диверсії проти могутньої Імперії, чиї землі простягаються цілий континент. Мало хто знає, що холоднокровні вбивці , за чиї голови оголошена нагорода, насправді нехай і не зовсім шляхетні, але все ж хоробрі визволителі і борці з прогнилою системою, створеною корумпованим урядом, якому зовсім начхати на бідне населення Імперії . Простий хлопчина Тацумі , виходець зі скромного села, опиняється в епіцентрі державного перевороту, стаючи товаришем кожному в Нічному Рейді. Сюжет « Akame ga Kill! » від і до рясніє несподіваними поворотами, що призводять в результаті до абсолютно неординарного фіналу. Своєю непередбачуваністю та знищенням усталених шаблонів, а також якісною візуалізацією цей хіт 2014 року багатьом сподобався.</p>
+</div>
+  </body>
+</html>

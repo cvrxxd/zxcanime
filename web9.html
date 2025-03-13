@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Another</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://takusanreviews.wordpress.com/wp-content/uploads/2014/02/another.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .text-block {
+            padding: 10px;
+            position: fixed;
+            background-color:aliceblue;
+            bottom: 50px;
+            align-content: center;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .text-block b {
+            color: #ff4444;
+        }
+        .table-container {
+            z-index: 100;
+            position:fixed;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #3a3a3a;
+        }
+        .episode-button {
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 5px; 
+        transition: 0.3s; 
+    }
+    .episode-button:hover {
+        background-color: #666;
+    }
+    .video-container {
+    z-index: 100;
+    margin-top: 250px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    }
+    iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+        
+    </style>
+     <script>
+      function playEpisode(url) {
+          document.getElementById("anime-player").src = url;
+      }
+  </script>
+  </head>
+  <body>
+  <div class="table-container">
+   <table>
+    <tr>
+      <th style="color: beige;" colspan="3">Episodes</th>
+    </tr>
+    <tr>
+        <td style="color: beige;" colspan="3">1 Season</td>
+    </tr>
+    <tr>
+        <td style="color: aliceblue;" button class="episode-button" onclick="playEpisode('https://kodik.info/seria/218877/32aa513033b7dc9790156847598a60f1/720p')">Episode 1</td>
+        <td style="color: aliceblue;" button class="episode-button" onclick="playEpisode('https://kodik.info/seria/218878/15a3827fc8ffd08757e6432b54faad31/720p')">Episode 2</td>
+        <td style="color: aliceblue;" button class="episode-button" onclick="playEpisode('https://kodik.info/seria/218879/b38264a56a2de4c190ad56447fd62c8a/720p')">Episode 3</td>
+    </tr>
+   </table>
+  </div>
+  <div class="video-container">
+    <iframe id="anime-player" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+   <div class="text-block">
+    <p>У звичайного школяра Коїті життя було не найщасливішим, адже в ранньому віці померла його мама . Батько мало приділяв часу синові, тому що він завжди був в експедиціях. Невдовзі хлопчику довелося переїхати з Токіо до маленького містечка <b>Йокіяма</b> до своєї рідної тітки. Цей переїзд був необхідний школяру, адже в нього стрімко розвивалася хвороба легень , і йому було потрібне чисте та свіже повітря. У Йокіямі хлопець вступив до старшої школи, і там йому не одразу вдалося знайти друзів. Коїті почав помічати, що в класі відбуваються містичні події , але однокласники начебто цього не помічають. Виявилося, що в школі стався нещасний випадок , і привид загиблого Мисакі досі живе у стінах навчального закладу. Директор та вчителі, а також школярі колись запросили мерця до класу. Такий вчинок став причиною прокляття , яке неможливо зняти. Коїті не знав про цю історію, а тому без побоювання потоваришував з Місакі . Все це знову активувало старе прокляття і містичних випадків стало набагато більше. Аніме "Another" наповнене не тільки лякаючою атмосферою, але й містичними загадками, що леденять кров . Приїжджий хлопець вплутався в дуже неприємну ситуацію, і допомогти йому зможе лише дивне дівчисько на ім'я Мей. Невже на юнака чекає та ж доля, що й усіх однокласників?</p>
+</div>
+  </body>
+</html>
